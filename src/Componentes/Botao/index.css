@@ -1,0 +1,22 @@
+.Botao {
+  background-color: #ffcb13;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.Botao:hover {
+  background-color: #ffa500;
+}
+
+.Botao.secundario {
+  background-color: #4d4d4d;
+}
+
+.Botao.secundario:hover {
+  background-color: #333;
+}

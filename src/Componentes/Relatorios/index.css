@@ -1,0 +1,35 @@
+.relatorios {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.relatorios h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.relatorios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.relatorios li {
+  margin-bottom: 15px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.relatorios li h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.relatorios li p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #666;
+}

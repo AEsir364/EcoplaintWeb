@@ -1,0 +1,114 @@
+/* Background color universal */
+body {
+  background-color: #f5f5f5;
+  position: relative; /* Para as bolhas serem posicionadas dentro do body */
+  overflow-x: hidden; /* Previne o scroll horizontal indesejado pelas bolhas */
+  margin: 0;
+  padding: 0;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8; /* Define a opacidade das bolhas em 80% */
+  z-index: -1; /* Garante que as bolhas estejam no fundo */
+}
+
+/* Configuração da primeira bolha */
+body::after {
+  width: 250px;
+  height: 250px;
+  top: -125px;
+  left: -50px;
+  background-color: #FFCB13;
+}
+
+/* Configuração da segunda bolha */
+body::before {
+  width: 250px;
+  height: 250px;
+  top: -30px;
+  left: -125px;
+  background-color: #FFD978;
+}
+
+/* Mantém as bolhas nos cantos */
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.formulario form {
+  width: 80%;
+  border-radius: 10px;
+  padding: 5% 0%;
+}
+
+/* Estilo para mensagens de erro e confirmação */
+.erro,
+.confirmacao {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.erro {
+  color: red;
+}
+
+.confirmacao {
+  color: green;
+}
+
+/* Estilo para títulos e parágrafos */
+h2,
+p,
+p1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: large;
+}
+
+p1 {
+  margin-top: 2%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+/* Links */
+.link-sem-decoracao {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Animação para notificações */
+.slide-right-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-right-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.slide-right-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
