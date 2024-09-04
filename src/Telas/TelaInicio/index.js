@@ -1,8 +1,8 @@
 import React from "react";
-import FormularioInicio from "../../Componentes/Formulario/FormularioInicio";
 import Header from "../../Componentes/Header";
 import Logo from "../../Componentes/Logo";
 import Texto from "../../Componentes/Texto";
+import '../index.css'; // Inclui o CSS para a página
 
 const TelaInicio = () => {
   return (
@@ -10,7 +10,6 @@ const TelaInicio = () => {
       <Header />
       <Logo />
       <Texto texto="Bem-vindo ao Ecoplaint" />
-      <FormularioInicio />
     </div>
   );
 };

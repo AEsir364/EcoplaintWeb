@@ -1,17 +1,11 @@
 .Logo {
-  text-align: center;
+  position: absolute; /* Permite posicionamento preciso */
+  top: 20px; /* Distância do topo da página */
+  left: 20px; /* Distância do lado esquerdo da página */
+  max-width: 15%; /* Ajusta o tamanho para ser menor */
 }
 
 .Logo img {
-  margin-top: 20%;
-  max-width: 35%;
-}
-
-.LogoMenor {
-  text-align: center;
-}
-
-.LogoMenor img {
-  margin-top: 10%;
-  max-width: 25%;
+  width: 50%; /* Garante que a imagem ocupe 100% da largura disponível dentro do container .Logo */
+  max-width: 50%; /* Limita a largura máxima */
 }

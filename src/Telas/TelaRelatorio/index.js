@@ -1,14 +1,19 @@
 import React from "react";
 import Header from "../../Componentes/Header";
 import Relatorios from "../../Componentes/Relatorios";
-import LogoMenor from "../../Componentes/Logo/LogoMenor";
+import Logo from "../../Componentes/Logo";
+import Inputs from "../../Componentes/Inputs";
+import '../index.css'; // Importa o CSS para o espaçamento
 
 const TelaRelatorio = () => {
   return (
     <div>
       <Header />
-      <LogoMenor />
-      <Relatorios />
+      <Logo />
+      <div className="container">
+        <Inputs />
+        <Relatorios />
+      </div>
     </div>
   );
 };
