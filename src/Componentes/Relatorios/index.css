@@ -1,13 +1,9 @@
 .relatorios {
   padding: 20px;
-  background-color: #fff;
+  background-color: #f5f5f5; /* Cor de fundo ajustada para o container */
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.relatorios h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  max-width: 1100px; /* Largura máxima dos relatórios */
+  margin: 0 auto; /* Centraliza os relatórios */
 }
 
 .relatorios ul {
@@ -16,20 +12,61 @@
 }
 
 .relatorios li {
-  margin-bottom: 15px;
-  background-color: #f5f5f5;
-  padding: 10px;
+  margin-bottom: 30px; /* Espaçamento entre os relatórios */
+  background-color: #e0e0e0; /* Ajusta a cor de fundo dos relatórios */
+  padding: 20px;
   border-radius: 8px;
+  display: flex;
+  align-items: flex-start; /* Alinha os itens no topo */
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para separação visual */
 }
 
-.relatorios li h3 {
-  margin: 0;
-  font-size: 20px;
-  color: #333;
+.relatorios img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
-.relatorios li p {
-  margin: 5px 0 0;
+.relatorios-conteudo {
+  flex: 1;
+  padding-right: 20px;
+  word-wrap: break-word; /* Garante que o texto seja quebrado em várias linhas */
+  white-space: normal; /* Garante que quebras de linha sejam permitidas */
+}
+
+.relatorios-acompanhamento {
+  width: 200px;
+  text-align: center;
+}
+
+.relatorios-acompanhamento h4 {
+  margin-bottom: 10px;
   font-size: 16px;
-  color: #666;
+}
+
+.acompanhamento-indicador {
+  display: flex;
+  align-items: center;
+}
+
+.acompanhamento-indicador span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.indicador-vermelho {
+  background-color: red;
+}
+
+.indicador-amarelo {
+  background-color: yellow;
+}
+
+.indicador-verde {
+  background-color: green;
 }

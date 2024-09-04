@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css";
 
-const Texto = ({ texto }) => {
+const TextoRelatorios = () => {
   return (
-    <div className="texto-centralizado">
-      <p>{texto}</p>
+    <div className="texto-relatorios">
+      <p>Seus relatórios:</p>
     </div>
   );
 };
 
-export default Texto;
+export default TextoRelatorios;

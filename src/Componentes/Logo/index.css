@@ -6,6 +6,6 @@
 }
 
 .Logo img {
-  width: 50%; /* Garante que a imagem ocupe 100% da largura disponível dentro do container .Logo */
-  max-width: 50%; /* Limita a largura máxima */
+  width: 40%; /* Garante que a imagem ocupe 100% da largura disponível dentro do container .Logo */
+  max-width: 40%; /* Limita a largura máxima */
 }

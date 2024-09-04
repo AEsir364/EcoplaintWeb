@@ -1,14 +1,11 @@
-.texto-centralizado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.texto-centralizado p {
-  font-size: 24px;
-  color: #333;
-  margin: 0;
-  font-weight: 500;
+.texto-relatorios {
+  font-family: 'Inter', sans-serif;
+  font-size: 48.41px;
+  font-weight: 650; /* Fonte mais "cheia" */
+  line-height: 1.2; /* Altura da linha */
+  color: rgba(0, 0, 0, 0.73); /* Cor preta com 73% de opacidade */
+  position: relative;
+  margin-top: 75px; /* Espaço entre o topo e o texto */
+  margin-left: 233px; /* Alinhamento horizontal */
+  margin-bottom: 10px; /* Espaço entre o texto e os relatórios */
 }

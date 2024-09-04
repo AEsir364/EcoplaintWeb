@@ -1,14 +1,17 @@
 .Inputs {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Alinha o input à direita */
   margin-bottom: 20px;
+  margin-right: 20px; /* Espaçamento da borda direita */
+  position: relative; /* Para permitir o posicionamento do ícone dentro do input */
 }
 
 .Inputs input {
-  padding: 16px;
+  padding: 16px 40px 16px 16px; /* Espaço à direita para o ícone e à esquerda para o placeholder */
   border-radius: 15px;
   font-size: 22px;
-  width: 100%;
+  width: 100%; /* Aumenta a largura do input */
+  max-width: 65%; /* Limita a largura máxima */
   background-color: rgb(226, 226, 226);
   border: none;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
@@ -17,6 +20,16 @@
 }
 
 .Inputs input::placeholder {
-  color: rgb(113, 113, 113);
-  text-align: center;
+  color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+  text-align: left; /* Coloca o placeholder mais à esquerda */
+}
+
+/* Estilo do ícone de pesquisa à direita */
+.Inputs .search-icon {
+  position: absolute;
+  right: 10px; /* Distância do ícone para o lado direito do input */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 24px; /* Largura do ícone */
+  height: 24px; /* Altura do ícone */
 }
